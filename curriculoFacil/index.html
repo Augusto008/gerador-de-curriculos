@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Áquila Augusto Anhaia Trindade">
+        <title>Currículo Fácil</title>
+        <link rel="stylesheet" type="text/css" href="..//curriculoFacil/sources/styles/index.css">
+    </head>
+    <body>
+        <div class="cabeca" id="cabecalho">
+            <h1 style="text-align: full;" class="titulo" id="tituloPrincipal">Currículo Fácil</h1>
+        </div>
+        <div class="intro" id="introducao">
+            <h2 class="titulo" id="subTitulo">Simplificando Currículos</h2>
+            <p class="paragrafo" id="introdutorio">Preencha o formulário abaixo com as informações pedidas e clique no botão "<b><u>Finalizar</u></b>" para concluir o preenchimento das informações e visualizar como o documento vai ficar.</p>
+        </div>
+        <div class="corpo" id="conteudo">
+            <form class="formulario" id="formularioCurriculo" method="POST" action="..//curriculoFacil/sources/scripts/processarFormulario(PDF).php">
+                <div class="secao" id="secaoDadosPessoais">
+                    <h3 class="tituloSecao" id="dadosPessoais">Dados Pessoais</h3>
+                    <label class="tituloAtributo" id="tituloNomeCompleto" for="nomeCompleto">Nome Completo:</label>
+                    <input class="campoLinha" id="nomeCompleto" name="nomeCompleto" type="text" size="100" maxlength="200" placeholder="Adriano Relâmpago Marquinhos" autocomplete="off"/> 
+                    <br>
+                    <label class="tituloAtributo" id="tituloEnderecoCompleto" for="enderecoCompleto">Endereço Completo:</label>
+                    <input class="campoLinha" id="enderecoCompleto" name="enderecoCompleto" type="text" size="100" maxlength="400" placeholder="Santa Tereza do Oeste-PR, Rua Tenete Coronel Aderlino Vilagrande, nº1632, casa 8, fundos" autocomplete="off"/>
+                    <br>
+                    <label class="tituloAtributo" id="tituloTelefone" for="telefone">Telefone:</label>
+                    <input class="campoLinha" id="telefone" name="telefone" type="tel" size="40" maxlength="16" placeholder="(22) 9 9872 - 0232" autocomplete="off"/> 
+                    <div class="maisAtributo" id="maisTelefone">
+                        <div class="novoAtributo" id="outroTelefone">
+                            <!--    Adicionar outro telefone    -->
+
+                        </div>
+                        <button class="adicionar" id="adicionaTelefone" name="adicionaTelefone" type="button"><b>+ telefone</b></button>
+                    </div>
+                    <label class="tituloAtributo" id="tituloEmail" for="email">E-mail:</label>
+                    <input class="campoLinha" id="email" name="email" type="email" size="40" maxlength="100" placeholder="funcionario_ideal@email.com" autocomplete="off"/> 
+                    <br>
+                    <label class="tituloAtributo" id="tituloLinkedIn" for="linkedIn">LinkedIn:</label>
+                    <input class="campoLinha" id="linkedIn" name="linkedIn" type="url" size="60" maxlength="200" placeholder="https://www.linkedin.com/in/funcionario-ideal/" autocomplete="off"/> 
+                    <br>
+                    <label class="tituloAtributo" id="tituloRedeSocial" for="redeSocial">Rede Social:</label>
+                    <input class="campoLinha" id="redeSocial" name="redeSocial" type="url" size="60" maxlength="200" placeholder="https://www.facebook.com/funcionario-ideal" autocomplete="off"/> 
+                    <div class="maisAtributo" id="maisRedeSocial">
+                        <div class="novoAtributo" id="outraRedeSocial">
+                            <!--    Adicionar Outra Rede Social   -->
+
+                        </div>
+                        <button class="adicionar" id="adicionaRedeSocial" name="adicionaRedeSocial" type="button"><b>+ Rede Social</b></button>
+                    </div>
+                </div>
+                <div class="secao" id="secaoObjetivo">
+                    <label class="tituloSecao" id="tituloObjetivo" for="objetivo"><b>Objetivo:</b></label>
+                    <br>
+                <textarea class="campoCaixa" id="objetivo" name="objetivo" type="text" size="100" rows="10" cols="60" maxlength="600" placeholder="Digite um breve resumo dos seus objetivos" autocomplete="off"></textarea> 
+                </div>
+                <div class="secao" id="secaoFormacao">
+                    <h3 class="tituloSecao" id="tituloFormacao">Formação Acadêmica</h3>
+                    <label class="tituloAtributo" id="tituloNomeCurso" for="nomeCurso">Nome do Curso:</label>
+                    <input class="campoLinha" id="nomeCurso" name="nomeCurso" type="text" size="90" maxlength="100" placeholder="Digitação" autocomplete="off"/>
+                    <br>
+                    <label class="tituloAtributo" id="tituloNivelCurso" for="nivelCurso">Nível:</label>
+                    <select class="selecao" id="nivelCurso" name="nivelCurso" type="text">
+                        <option class="opcaoNivel" id="opSelecioneGrad">selecione uma graduação</option>
+                        <option class="opcaoNivel" id="opEnsinoFundamental">Ensino Fundamental</option>
+                        <option class="opcaoNivel" id="opEnsinoMedio">Ensino Médio</option>
+                        <option class="opcaoNivel" id="opCursoTecnico">Curso Técnico</option>
+                        <option class="opcaoNivel" id="opGraduacao">Graduação</option>
+                        <option class="opcaoNivel" id="opEspecializacao">Especialização</option>
+                        <option class="opcaoNivel" id="opMestrado">Mestrado</option>
+                        <option class="opcaoNivel" id="opDoutorado">Doutorado</option>
+                    </select>
+                    <label class="tituloAtributo" id="tituloStatusCurso" for="statusCurso">Status:</label>
+                    <select class="selecao " id="statusCurso" name="statusCurso" type="text">
+                        <option class="opcaoNivel" id="opSelecioneStatus">Selecione o status</option>
+                        <option class="opcaoNivel" id="opCursando">Cursando</option>
+                        <option class="opcaoNivel" id="opIncompleto">Incompleto</option>
+                        <option class="opcaoNivel" id="opCompleto">Completo</option>
+                    </select>
+                    <br>
+                    <label class="tituloAtributo" id="tituloInstituicao" for="instituicao">Instituição:</label>
+                    <input class="campoLinha" id="instituicao" name="instituicao" type="text" size="90" maxlength="200" placeholder="E.E.E.T. Munehisa Honma" autocomplete="off"/>
+                    <br>
+                    <h4 class="tituloAtributo" id="tituloDataInicio">Data de Início:</h4>
+                    <label class="tituloAtributo" id="tituloMesInicioCurso" for="mesInicioCurso">Mês: </label>
+                    <input class="campoLinha" id="mesInicioCurso" name="mesInicioCurso" type="text" size="2" maxlength="2" placeholder="05" autocomplete="off"/>
+                    <label class="tituloAtributo" id="tituloAnoInicioCurso" for="anoInicioCurso">Ano: </label>
+                    <input class="campoLinha" id="mesInicioCurso" name="anoInicioCurso" type="text" size="4" maxlength="4" placeholder="2001" autocomplete="off"/>
+                    <h4 class="tituloAtributo" id="tituloDataConclusao">Data de Conclusão:</h4>
+                    <label class="tituloAtributo" id="tituloMesGraduacaoCurso" for="mesGraduacaoCurso">Mês: </label>
+                    <input class="campoLinha" id="mesGraduacaoCurso" name="mesGraduacaoCurso" type="text" size="2" maxlength="2" placeholder="08" autocomplete="off"/>
+                    <label class="tituloAtributo" id="tituloAnoGraduacaoCurso" for="anoGraduacaoCurso">Ano: </label>
+                    <input class="campoLinha" id="anoGraduacaoCurso" name="anoGraduacaoCurso" type="text" size="4" maxlength="4" placeholder="2001" autocomplete="off"/>
+                    <div class="maisAtributo" id="maisCurso">
+                        <div class="novoAtributo" id="outroCurso">
+                            <!--    Adicionar Outro Curso    -->
+
+                        </div>
+                        <button class="adicionar" id="adicionaCurso" name="adicionaCurso" type="button"><b>+ Curso</b></button>
+                    </div>
+                </div>
+                <div class="secao" id="secaoIdiomas">
+                    <h3 class="tituloSecao" id="idiomas">Idiomas</h3>
+                    <label class="tituloAtributo" id="tituloIdioma" for="idioma">Idioma:</label>
+                    <select class="selecao" id="idioma" name="idioma" type="text">
+                        <option class="opcaoNivel" id="opSelecioneIdioma">selecione um idioma</option>
+                        <option class="opcaoNivel" id="opAlemao">Alemão</option>
+                        <option class="opcaoNivel" id="opArabe">Árabe</option>
+                        <option class="opcaoNivel" id="opCoreano">Coreano</option>
+                        <option class="opcaoNivel" id="opIngles">Inglês</option>
+                        <option class="opcaoNivel" id="opJapones">Japonês</option>
+                        <option class="opcaoNivel" id="opLatim">Latim</option>
+                        <option class="opcaoNivel" id="opPortugues">Portugês</option>
+                        <option class="opcaoNivel" id="opRusso">Russo</option>
+                    </select>
+                    <label class="tituloAtributo" id="tituloNivelIdioma" for="nivelIdioma">Nível:</label>
+                    <select class="selecao" id="nivelIdioma" name="nivelIdioma" type="text" >
+                        <option class="opcaoNivel" id="opSelecioneNivel">selecione um nível</option>
+                        <option class="opcaoNivel" id="opBasico">Básico</option>
+                        <option class="opcaoNivel" id="opIntermediario">Intermediário</option>
+                        <option class="opcaoNivel" id="opAvancado">Avançado</option>
+                        <option class="opcaoNivel" id="opFluente">Fluente</option>
+                    </select>
+                    <div class="maisAtributo" id="maisIdioma">
+                        <div class="novoAtributo" id="outroIdioma">
+                            <!--    Adicionar Outro Idioma    -->
+
+                        </div>
+                        <button class="adicionar" id="adicionaIdioma" name="adicionaIdioma" type="button"><b>+ idioma</b></button>
+                    </div>
+                </div>
+                <div class="secao" id="secaoCompetenciasHabilidades">
+                    <label class="tituloSecao" id="tituloCompetenciasHabilidades" for="competenciasHabilidades"><b>Competências e Habilidades</b></label>
+                    <br>
+                	<textarea class="campoTexto" id="competenciasHabilidades" name="competenciasHabilidades" size="100" rows="10" cols="60" maxlength="600" placeholder="Digite um breve resumo de suas competências e habilidades" autocomplete="off"></textarea>
+                </div>
+                <div class="secao" id="secaoExperiencias">
+                    <label class="tituloSecao" id="tituloExperiencias" for="experiencias"><b>Experiências</b></label>
+                    <br>
+                	<textarea class="campoTexto" id="experiencias" name="experiencias" size="100" rows="10" cols="60" maxlength="600" placeholder="Digite um breve resumo das suas experiências, sejam elas profissionais ou não." autocomplete="off"></textarea>
+                </div>
+                <div class="secao" id="secaoProfissional">
+                    <h3 class="tituloSecao" id="historicoProfissional">Histórico Profissional</h3>
+                    <label class="tituloAtributo" id="tituloFuncao" for="funcao">Função: </label>
+                    <input class="campoLinha" id="funcao" name="funcao" type="text" size="100" maxlength="100" placeholder="Desenvolvedor WEB júnior" autocomplete="off"/>
+                    <br>
+                    <label class="tituloAtributo" id="tituloEmpresa" for="empresa">Empresa:</label>
+                    <input class="campoLinha" id="empresa" name="empresa" type="text" size="100" maxlength="100" placeholder="Métricas Montreal LTDA." autocomplete="off"/>
+                    <h4 class="tituloAtributo" id="tituloDataInicioFuncao">Data de Início</h4>
+                    <label class="tituloAtributo" id="tituloMesInicioFuncao" for="mesInicioFuncao">Mês: </label>
+                    <input class="campoLinha" id="mesInicioFuncao" name="mesInicioFuncao" type="text" size="2" maxlength="2" placeholder="05" autocomplete="off"/>
+                    <label class="tituloAtributo" id="tituloAnoInicioFuncao" for="anoInicioFuncao">Ano: </label>
+                    <input class="campoLinha" id="anoInicioFuncao" name="anoInicioFuncao" type="text" size="4" maxlength="4" placeholder="2001" autocomplete="off"/>
+                    <h4 class="tituloAtributo" id="tituloDataTerminoFuncao">Data de Término</h4>
+                    <label class="tituloAtributo" id="tituloMesTerminoFuncao" for="mesTerminoFuncao">Mês: </label>
+                    <input class="campoLinha" id="mesTerminoFuncao" name="mesTerminoFuncao" type="text" size="2" maxlength="2" placeholder="05" autocomplete="off"/>
+                    <label class="tituloAtributo" id="tituloAnoTerminoFuncao" for="anoTerminoFuncao">Ano: </label>
+                    <input class="campoLinha" id="anoTerminoFuncao" name="anoTerminoFuncao" type="text" size="4" maxlength="4" placeholder="2001" autocomplete="off"/>
+                    <br>
+                    <label class="tituloAtributo" id="tituloDescricaoFuncao" for="descricaoFuncao">Descrição da Função:</label>
+                    <br>
+                    <textarea class="campoCaixa" id="descricaoFuncao" name="descricaoFuncao" type="text" size="200" rows="10" cols="60" maxlength="600" placeholder="Digite um breve resumo de suas responsabilidades na função que descrevestes acima." autocomplete="off"></textarea>
+                    <div class="maisAtributo" id="maisHistoricoProfissional">
+                        <div class="novoAtributo" id="outroHistoricoProfissional">
+                            <!--    Adicionar Outro Histórico Profissional   -->
+                        
+                        </div>
+                        <button class="adicionar" id="adicionaHistoricoProfissional" name="adicionaHistoricoProfissional" type="button"><b>+ Histórico Profissional</b></button>
+                    </div>
+                </div>
+                <div class="secao" id="secaoComplementar">
+                    <label class="tituloSecao" id="tituloInformacoesComplementares" for="InformacoesComplementares"><b>Informações Complementares</b></label>
+                    <br>
+                    <textarea class="campoCaixa" id="InformacoesComplementares" name="informacoesComplementares" type="text" size="100" rows="10" cols="60" maxlength="600" placeholder="Digite as informações que você acredita que não foram expressas anteriormente e acha que precisam ser consideradas." autocomplete="off"></textarea>
+                </div>
+                <div class="secao" id="secaoFinalFormulario">
+                    <button class="limpar" id="limpar" name="limpar" type="reset"><b>Limpar Formulário</b></button>
+                    <button class="enviar" id="enviar" name="enviar" type="submit"><b>Finalizar</b></button>
+                </div>
+            </form>
+        </div>
+        <div class="pe" id="rodape">
+            <h2 class="tituloRodape" id="informacoesDoAutor">Informações do Desenvolvedor</h2>
+            <p class="paragrafo" id="contatos">Contatos:</p>
+            <ul class="lista" id="listaContatos">
+                <li>Nome: Áquila Augusto</li>
+                <li>Email: aquila.real0@gmail.com</li>
+                <li><a href="https://www.linkedin.com/in/aquilatrindade/">Linkedin</a></li>
+                <li><a href="https://github.com/Augusto008">GitHub</a></li>
+            </ul> 
+        </div>
+    </body>
+    <script type="application/javascript" src="..//curriculoFacil/sources/scripts/index.js"></script>
+</html>
