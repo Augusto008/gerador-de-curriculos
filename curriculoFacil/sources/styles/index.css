@@ -1,0 +1,182 @@
+/* ---------------- página ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+/* ---------------- body ---------------- */
+body {
+    background-image: linear-gradient(rgb(156, 151, 206), rgb(150, 150, 150), rgb(187, 255, 232));
+}
+
+/* ---------------- títulos ---------------- */
+h1 {
+    text-align: center;
+    font-size: 60;
+    color: rgb(72, 72, 176);
+    text-shadow: silver 0.5px 0.5px 1px;
+    position: relative;
+    -ms-wrap-flow: initial;
+}
+
+h2 {
+    margin: 5px;
+    padding: 5px;
+}
+
+form .secao .tituloSecao{
+    font-size: 30px;
+}
+
+form div .tituloAtributo {
+    font-size: 20px;
+}
+
+/* ---------------- cabeçalho ---------------- */
+.cabeca {
+    background-color: black;
+    padding: 50px;
+    border-bottom: solid;
+    border-bottom-color: white;
+}
+
+/* ---------------- introdução ---------------- */
+.intro {
+    text-align: center;
+}
+
+#introducao #subtitulo {
+    font-size: 30px;
+}
+
+#introducao #introdutorio {
+    font-size: 15px;
+}
+
+/* ---------------- formulário ---------------- */
+form {
+    border: double;
+    border-width: 20px;
+    border-color: black;
+}
+
+/* ---------------- divs ---------------- */
+div {
+    padding: 10px;
+}
+
+form .secao {
+    margin: 20px;
+    border-top: dotted;
+    border-color: gray;
+}
+
+form .maisAtributo, form .novoAtributo {
+    margin: 0;
+    padding: 0;
+}
+
+form #secao_8 {
+    padding: 30px;
+    border-bottom: dotted;
+    border-color: gray;
+}
+
+form .divTelefone, form .divRedeSocial, form .divIdioma {
+    margin: 0;
+    padding: 0;
+}
+
+form .divCurso, form .divHistoricoProfissional {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* ---------------- campos ---------------- */
+form input {
+    max-width: 98%;
+}
+
+textarea {
+    height: 60px;
+    width: 98%;
+    max-width: 600px;
+}
+
+/* ---------------- botões ---------------- */
+form button{
+    margin: 0;
+    padding: 10px;
+    border-radius: 25px;
+    border-style: solid;
+}
+
+form .adicionar {
+    color: black;
+    border-color: gray;
+    text-align: center;
+}
+
+form #limpar {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: black;
+    border-color: red;
+    font-size: 15px;
+    background-color: rgb(172, 172, 172);
+    float: left;
+}
+
+form .deletar {
+    background-color: white;
+    border-radius: 25%;
+    margin-bottom: -5px;
+    margin-left: 20px;
+}
+
+form #enviar {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: black;
+    border-color: black;
+    border-radius: 50%;
+    font-size: 15px;
+    background-color: rgb(172, 172, 172);
+    float: right;
+}
+
+form .mais:hover {
+    background-color: aqua;
+    color: rgb(20, 20, 20);
+}
+
+form #limpar:hover {
+    border-color: black;
+    background-color: rgb(255, 32, 32);
+    color: black;
+}
+
+form #enviar:hover {
+    border-color: red;
+    background-color: black;
+    color: silver;
+}
+
+/* ---------------- rodapé ---------------- */
+.pe{
+    padding: 100px;
+    text-align: center;
+    text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+.pe h2, .pe p {
+    font-size: 40px;
+}
+
+.pe li {
+    font-size: 20px;
+}
