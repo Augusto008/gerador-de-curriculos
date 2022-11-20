@@ -13,7 +13,7 @@ body {
 /* ---------------- títulos ---------------- */
 h1 {
     text-align: center;
-    font-size: 60;
+    font-size: 60px;
     color: rgb(72, 72, 176);
     text-shadow: silver 0.5px 0.5px 1px;
     position: relative;
@@ -98,7 +98,7 @@ form .divCurso, form .divHistoricoProfissional {
 
 /* ---------------- campos ---------------- */
 form input {
-    max-width: 98%;
+    max-width: 90%;
 }
 
 textarea {
