@@ -1,15 +1,15 @@
-var formularioCurriculo = document.getElementById("formularioCurriculo");
-var botao_maisTelefone = document.getElementById("adicionaTelefone");
-var outroTelefone = document.getElementById("outroTelefone");
-var botao_maisRedeSocial = document.getElementById("adicionaRedeSocial");
-var outraRedeSocial = document.getElementById("outraRedeSocial");
-var botao_maisCurso = document.getElementById("adicionaCurso");
-var outroCurso = document.getElementById("outroCurso");
-var botao_maisIdioma = document.getElementById("adicionaIdioma");
-var outroIdioma = document.getElementById("outroIdioma");
-var botao_maisFuncao = document.getElementById("adicionaHistoricoProfissional");
-var outraFuncao = document.getElementById("outroHistoricoProfissional");
-var botao_visualizar = document.getElementById("visualizar");
+const formularioCurriculo = document.getElementById("formularioCurriculo");
+const botao_maisTelefone = document.getElementById("adicionaTelefone");
+const outroTelefone = document.getElementById("outroTelefone");
+const botao_maisRedeSocial = document.getElementById("adicionaRedeSocial");
+const outraRedeSocial = document.getElementById("outraRedeSocial");
+const botao_maisCurso = document.getElementById("adicionaCurso");
+const outroCurso = document.getElementById("outroCurso");
+const botao_maisIdioma = document.getElementById("adicionaIdioma");
+const outroIdioma = document.getElementById("outroIdioma");
+const botao_maisFuncao = document.getElementById("adicionaHistoricoProfissional");
+const outraFuncao = document.getElementById("outroHistoricoProfissional");
+const botao_visualizar = document.getElementById("visualizar");
 
 
 /* ------------------------------------------------------------------------------------------------------
@@ -136,7 +136,7 @@ botao_maisFuncao.addEventListener('click', function() {
    ----------------------------- Criando novas divisões para cada sessão --------------------------------
    ------------------------------------------------------------------------------------------------------ */
 function criarDivTelefone() {
-    var divisao = document.createElement("div");
+    let divisao = document.createElement("div");
     divisao.setAttribute("class", "divTelefone");
     divisao.setAttribute("id", "telefone(" + contTelefone + ")");
     divisao.setAttribute("style", "margin: 0; padding: 0;");
@@ -145,7 +145,7 @@ function criarDivTelefone() {
 };
 
 function criarDivRedeSocial() {
-    var divisao = document.createElement("div");
+    let divisao = document.createElement("div");
     divisao.setAttribute("class", "divRedeSocial");
     divisao.setAttribute("id", "redeSocial(" + contRedeSocial + ")");
     divisao.setAttribute("style", "margin: 0; padding: 0;");
@@ -154,7 +154,7 @@ function criarDivRedeSocial() {
 };
 
 function criarDivCurso() {
-    var divisao = document.createElement("div");
+    let divisao = document.createElement("div");
     divisao.setAttribute("class", "divCurso");
     divisao.setAttribute("id", "curso(" + contCurso + ")");
 
@@ -162,7 +162,7 @@ function criarDivCurso() {
 };
 
 function criarDivIdioma() {
-    var divisao = document.createElement("div");
+    let divisao = document.createElement("div");
     divisao.setAttribute("class", "divIdioma");
     divisao.setAttribute("id", "idioma(" + contIdioma + ")");
     divisao.setAttribute("style", "margin: 0; padding: 0;");
@@ -171,7 +171,7 @@ function criarDivIdioma() {
 };
 
 function criarDivFuncao() {
-    var divisao = document.createElement("div");
+    let divisao = document.createElement("div");
     divisao.setAttribute("class", "divHistoricoProfissional");
     divisao.setAttribute("id", "historicoProfissional(" + contFuncao + ")");
 
@@ -185,36 +185,36 @@ function criarDivFuncao() {
    --------------------------------------- Funções Quebrar Linha ----------------------------------------
    ------------------------------------------------------------------------------------------------------*/
 function quebrarLinhaTelefone() {
-    var referencia = document.getElementById("telefone(" + contTelefone + ")");
-    var novaLinha = document.createElement("br");
+    let referencia = document.getElementById("telefone(" + contTelefone + ")");
+    let novaLinha = document.createElement("br");
 
     referencia.appendChild(novaLinha);
 };
 
 function quebrarLinhaRedeSocial() {
-    var referencia = document.getElementById("redeSocial(" + contRedeSocial + ")");
-    var novaLinha = document.createElement("br");
+    let referencia = document.getElementById("redeSocial(" + contRedeSocial + ")");
+    let novaLinha = document.createElement("br");
 
     referencia.appendChild(novaLinha);
 };
 
 function quebrarLinhaCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var novaLinha = document.createElement("br");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let novaLinha = document.createElement("br");
 
     referencia.appendChild(novaLinha);
 };
 
 function quebrarLinhaIdioma() {
-    var referencia = document.getElementById("idioma(" + contIdioma + ")");
-    var novaLinha = document.createElement("br");
+    let referencia = document.getElementById("idioma(" + contIdioma + ")");
+    let novaLinha = document.createElement("br");
 
     referencia.appendChild(novaLinha);
 };
 
 function quebrarLinhaFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var novaLinha = document.createElement("br");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let novaLinha = document.createElement("br");
 
     referencia.appendChild(novaLinha);
 };
@@ -226,8 +226,8 @@ function quebrarLinhaFuncao() {
    ------------------------------------------- Botão Delete ---------------------------------------------
    ------------------------------------------------------------------------------------------------------ */
 function criarBotaoDeleteTelefone() {
-    var referencia = document.getElementById("telefone(" + contTelefone + ")");
-    var botao = document.createElement("img");
+    let referencia = document.getElementById("telefone(" + contTelefone + ")");
+    let botao = document.createElement("img");
     botao.setAttribute("class", "deletar");
     botao.setAttribute("id", "deletarTelefone" + contTelefone);
     botao.setAttribute("src", "..//curriculoFacil/sources/images/botaoLixeira.png");
@@ -238,8 +238,8 @@ function criarBotaoDeleteTelefone() {
 };
 
 function criarBotaoDeleteRedeSocial() {
-    var referencia = document.getElementById("redeSocial(" + contRedeSocial + ")");
-    var botao = document.createElement("img");
+    let referencia = document.getElementById("redeSocial(" + contRedeSocial + ")");
+    let botao = document.createElement("img");
     botao.setAttribute("id", "deletarRedeSocial" + contRedeSocial);
     botao.setAttribute("class", "deletar");
     botao.setAttribute("src", "..//curriculoFacil/sources/images/botaoLixeira.png");
@@ -250,8 +250,8 @@ function criarBotaoDeleteRedeSocial() {
 };
 
 function criarBotaoDeleteCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var botao = document.createElement("img");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let botao = document.createElement("img");
     botao.setAttribute("id", "deletarCurso" + contCurso);
     botao.setAttribute("class", "deletar");
     botao.setAttribute("src", "..//curriculoFacil/sources/images/botaoLixeira.png");
@@ -262,8 +262,8 @@ function criarBotaoDeleteCurso() {
 };
 
 function criarBotaoDeleteIdioma() {
-    var referencia = document.getElementById("idioma(" + contIdioma + ")");
-    var botao = document.createElement("img");
+    let referencia = document.getElementById("idioma(" + contIdioma + ")");
+    let botao = document.createElement("img");
     botao.setAttribute("id", "deletarIdioma" + contIdioma);
     botao.setAttribute("class", "deletar");
     botao.setAttribute("src", "..//curriculoFacil/sources/images/botaoLixeira.png");
@@ -274,8 +274,8 @@ function criarBotaoDeleteIdioma() {
 };
 
 function criarBotaoDeleteFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var botao = document.createElement("img");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let botao = document.createElement("img");
     botao.setAttribute("id", "deletarFuncao" + contFuncao);
     botao.setAttribute("class", "deletar");
     botao.setAttribute("src", "..//curriculoFacil/sources/images/botaoLixeira.png");
@@ -291,14 +291,14 @@ function criarBotaoDeleteFuncao() {
    --------------- Deletando elementos de uma seção e corrigindo os atributos dos demais ----------------
    ------------------------------------------------------------------------------------------------------ */
 function deletar(id, menos, passo){
-    var referencia = document.getElementById(id);
+    let referencia = document.getElementById(id);
     referencia.remove();
 
     if (menos == "telefone") {
         if (passo < contTelefone) {
-            var titulo = document.getElementById("tituloTelefone3");
-            var telefone = document.getElementById("telefone3");
-            var deletar = document.getElementById("deletarTelefone3");
+            let titulo = document.getElementById("tituloTelefone3");
+            let telefone = document.getElementById("telefone3");
+            let deletar = document.getElementById("deletarTelefone3");
 
             document.getElementById("telefone(3)").id = "telefone(2)";
             titulo.setAttribute("for", "telefone2");
@@ -319,12 +319,12 @@ function deletar(id, menos, passo){
     } else if (menos == "redeSocial") {
         if(passo < contRedeSocial) {
             for (i = passo; i < contRedeSocial; i++) {
-                var subtrair = i + 1;
+                let subtrair = i + 1;
 
-                var subsecao = document.getElementById("redeSocial(" + subtrair + ")");
-                var titulo = document.getElementById("tituloRedeSocial" + subtrair);
-                var redeSocial = document.getElementById("redeSocial" + subtrair);
-                var deletar = document.getElementById("deletarRedeSocial" + subtrair);
+                let subsecao = document.getElementById("redeSocial(" + subtrair + ")");
+                let titulo = document.getElementById("tituloRedeSocial" + subtrair);
+                let redeSocial = document.getElementById("redeSocial" + subtrair);
+                let deletar = document.getElementById("deletarRedeSocial" + subtrair);
 
                 subsecao.id = "redeSocial(" + i + ")";
                 titulo.setAttribute("for", "tituloRedeSocial" + i);
@@ -345,26 +345,26 @@ function deletar(id, menos, passo){
     } else if (menos == "curso") {
         if (passo < contCurso) {
             for (i = passo; i < contCurso; i++) {
-                var subtrair = i + 1;
+                let subtrair = i + 1;
 
-                var subsecao = document.getElementById("curso(" + subtrair + ")");
-                var tCurso = document.getElementById("tituloCurso" + subtrair);
-                var curso = document.getElementById("nomeCurso" + subtrair);
-                var deletar = document.getElementById("deletarCurso" + subtrair);
-                var tNivelCurso = document.getElementById("tituloNivelCurso" + subtrair);
-                var nivelCurso = document.getElementById("nivelCurso" + subtrair);
-                var tStatusCurso = document.getElementById("tituloStatusCurso" + subtrair);
-                var statusCurso = document.getElementById("statusCurso" + subtrair);
-                var tInstituicao = document.getElementById("tituloInstituicao" + subtrair);
-                var instituicao = document.getElementById("instituicao" + subtrair);
-                var tMesInicio = document.getElementById("tituloMesInicioCurso" + subtrair);
-                var mesInicio = document.getElementById("mesInicioCurso" + subtrair);
-                var tAnoInicio = document.getElementById("tituloAnoInicioCurso" + subtrair);
-                var anoInicio = document.getElementById("anoInicioCurso" + subtrair);
-                var tMesGrad = document.getElementById("tituloMesGraduacaoCurso" + subtrair);
-                var mesGrad = document.getElementById("mesGraduacaoCurso" + subtrair);
-                var tAnoGrad = document.getElementById("tituloAnoGraduacaoCurso" + subtrair);
-                var anoGrad = document.getElementById("anoGraduacaoCurso" + subtrair);
+                let subsecao = document.getElementById("curso(" + subtrair + ")");
+                let tCurso = document.getElementById("tituloCurso" + subtrair);
+                let curso = document.getElementById("nomeCurso" + subtrair);
+                let deletar = document.getElementById("deletarCurso" + subtrair);
+                let tNivelCurso = document.getElementById("tituloNivelCurso" + subtrair);
+                let nivelCurso = document.getElementById("nivelCurso" + subtrair);
+                let tStatusCurso = document.getElementById("tituloStatusCurso" + subtrair);
+                let statusCurso = document.getElementById("statusCurso" + subtrair);
+                let tInstituicao = document.getElementById("tituloInstituicao" + subtrair);
+                let instituicao = document.getElementById("instituicao" + subtrair);
+                let tMesInicio = document.getElementById("tituloMesInicioCurso" + subtrair);
+                let mesInicio = document.getElementById("mesInicioCurso" + subtrair);
+                let tAnoInicio = document.getElementById("tituloAnoInicioCurso" + subtrair);
+                let anoInicio = document.getElementById("anoInicioCurso" + subtrair);
+                let tMesGrad = document.getElementById("tituloMesGraduacaoCurso" + subtrair);
+                let mesGrad = document.getElementById("mesGraduacaoCurso" + subtrair);
+                let tAnoGrad = document.getElementById("tituloAnoGraduacaoCurso" + subtrair);
+                let anoGrad = document.getElementById("anoGraduacaoCurso" + subtrair);
 
 
 
@@ -415,14 +415,14 @@ function deletar(id, menos, passo){
     } else if (menos == "idioma") {
         if (passo < contIdioma) {
             for (i = passo; i < contIdioma; i++) {
-                var subtrair = i + 1;
+                let subtrair = i + 1;
 
-                var subsecao = document.getElementById("idioma(" + subtrair + ")");
-                var tIdioma = document.getElementById("tituloIdioma" + subtrair);
-                var idioma = document.getElementById("idioma" + subtrair);
-                var tNivelIdioma = document.getElementById("tituloNivelIdioma" + subtrair);
-                var nivelIdioma = document.getElementById("nivelIdioma" + subtrair);
-                var deletar = document.getElementById("deletarIdioma" + subtrair);
+                let subsecao = document.getElementById("idioma(" + subtrair + ")");
+                let tIdioma = document.getElementById("tituloIdioma" + subtrair);
+                let idioma = document.getElementById("idioma" + subtrair);
+                let tNivelIdioma = document.getElementById("tituloNivelIdioma" + subtrair);
+                let nivelIdioma = document.getElementById("nivelIdioma" + subtrair);
+                let deletar = document.getElementById("deletarIdioma" + subtrair);
 
                 subsecao.id = "idioma(" + i + ")";
                 tIdioma.setAttribute("for", "idioma" + i);
@@ -444,26 +444,26 @@ function deletar(id, menos, passo){
     } else if (menos == "funcao") {
         if (passo < contFuncao) {
             for (i = passo; i < contFuncao; i++) {
-                var subtrair = i + 1;
+                let subtrair = i + 1;
 
-                var subsecao = document.getElementById("historicoProfissional(" + subtrair + ")");
-                var tFuncao = document.getElementById("tituloFuncao" + subtrair);
-                var funcao = document.getElementById("funcao" + subtrair);
-                var deletar = document.getElementById("deletarFuncao" + subtrair);
-                var tEmpresa = document.getElementById("tituloEmpresa" + subtrair);
-                var empresa = document.getElementById("empresa" + subtrair);
-                var tDataInicioFuncao = document.getElementById("tituloDataInicioFuncao" + subtrair);
-                var tMesInicioFuncao = document.getElementById("tituloMesInicioFuncao" + subtrair);
-                var mesInicioFuncao = document.getElementById("mesInicioFuncao" + subtrair);
-                var tAnoInicioFuncao = document.getElementById("tituloAnoInicioFuncao" + subtrair);
-                var anoInicioFuncao = document.getElementById("anoInicioFuncao" + subtrair);
-                var tDataTerminoFuncao = document.getElementById("tituloDataTerminoFuncao" + subtrair);
-                var tMesTerminoFuncao = document.getElementById("tituloMesTerminoFuncao" + subtrair);
-                var mesTerminoFuncao = document.getElementById("mesTerminoFuncao" + subtrair);
-                var tAnoTerminoFuncao = document.getElementById("tituloAnoTerminoFuncao" + subtrair);
-                var anoTerminoFuncao = document.getElementById("anoTerminoFuncao" + subtrair);
-                var tDescricaoFuncao = document.getElementById("tituloDescricaoFuncao" + subtrair);
-                var descricaoFuncao = document.getElementById("descricaoFuncao" + subtrair);
+                let subsecao = document.getElementById("historicoProfissional(" + subtrair + ")");
+                let tFuncao = document.getElementById("tituloFuncao" + subtrair);
+                let funcao = document.getElementById("funcao" + subtrair);
+                let deletar = document.getElementById("deletarFuncao" + subtrair);
+                let tEmpresa = document.getElementById("tituloEmpresa" + subtrair);
+                let empresa = document.getElementById("empresa" + subtrair);
+                let tDataInicioFuncao = document.getElementById("tituloDataInicioFuncao" + subtrair);
+                let tMesInicioFuncao = document.getElementById("tituloMesInicioFuncao" + subtrair);
+                let mesInicioFuncao = document.getElementById("mesInicioFuncao" + subtrair);
+                let tAnoInicioFuncao = document.getElementById("tituloAnoInicioFuncao" + subtrair);
+                let anoInicioFuncao = document.getElementById("anoInicioFuncao" + subtrair);
+                let tDataTerminoFuncao = document.getElementById("tituloDataTerminoFuncao" + subtrair);
+                let tMesTerminoFuncao = document.getElementById("tituloMesTerminoFuncao" + subtrair);
+                let mesTerminoFuncao = document.getElementById("mesTerminoFuncao" + subtrair);
+                let tAnoTerminoFuncao = document.getElementById("tituloAnoTerminoFuncao" + subtrair);
+                let anoTerminoFuncao = document.getElementById("anoTerminoFuncao" + subtrair);
+                let tDescricaoFuncao = document.getElementById("tituloDescricaoFuncao" + subtrair);
+                let descricaoFuncao = document.getElementById("descricaoFuncao" + subtrair);
 
                 subsecao.id = ("historicoProfissional(" + i + ")");
                 tFuncao.textContent = "Função " + i + ": ";
@@ -521,8 +521,8 @@ function deletar(id, menos, passo){
 
 // <label class="tituloAtributo" id="tituloTelefone" for="telefone">Telefone:</label>
 function criarLabelTelefone() {
-    var referencia = document.getElementById("telefone(" + contTelefone + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("telefone(" + contTelefone + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloTelefone" + contTelefone);
     atributo.setAttribute("for", "telefone" + contTelefone);
@@ -533,8 +533,8 @@ function criarLabelTelefone() {
 
 // <input class="campoLinha" id="telefone" name="telefone" type="tel" size="40" maxlength="16" placeholder="(22) 9 9872 - 0232" autocomplete="off"/>
 function criarInputTelefone() {
-    var referencia = document.getElementById("telefone(" + contTelefone + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("telefone(" + contTelefone + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "telefone" + contTelefone);
     atributo.setAttribute("name", "telefone" + contTelefone);
@@ -549,8 +549,8 @@ function criarInputTelefone() {
 
 // <label class="tituloAtributo" id="tituloRedeSocial" for="redeSocial">Rede Social:</label>
 function criarLabelRedeSocial() {
-    var referencia = document.getElementById("redeSocial(" + contRedeSocial + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("redeSocial(" + contRedeSocial + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloRedeSocial" + contRedeSocial);
     atributo.setAttribute("for", "redeSocial" + contRedeSocial);
@@ -561,8 +561,8 @@ function criarLabelRedeSocial() {
 
 // <input class="campoLinha" id="redeSocial" name="redeSocial" type="url" size="60" maxlength="200" placeholder="https://www.facebook.com/funcionario-ideal" autocomplete="off"/>
 function criarInputRedeSocial() {
-    var referencia = document.getElementById("redeSocial(" + contRedeSocial + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("redeSocial(" + contRedeSocial + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "redeSocial" + contRedeSocial);
     atributo.setAttribute("name", "redeSocial" + contRedeSocial);
@@ -577,8 +577,8 @@ function criarInputRedeSocial() {
 
 // <label class="tituloAtributo" id="tituloNomeCurso" for="nomeCurso">Nome do Curso:</label>
 function criarLabelNomeCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloCurso" + contCurso);
     atributo.setAttribute("for", "nomeCurso" + contCurso);
@@ -589,8 +589,8 @@ function criarLabelNomeCurso() {
 
 // <input class="campoLinha" id="nomeCurso" name="nomeCurso" type="text" size="90" maxlength="100" placeholder="Digitação" autocomplete="off"/>
 function criarInputNomeCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "nomeCurso" + contCurso);
     atributo.setAttribute("name", "nomeCurso" + contCurso);
@@ -605,8 +605,8 @@ function criarInputNomeCurso() {
 
 // <label class="tituloAtributo" id="tituloNivelCurso" for="nivelCurso">Nível:</label>
 function criarLabelNivelCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloNivelCurso" + contCurso);
     atributo.setAttribute("for", "nivelCurso" + contCurso);
@@ -617,8 +617,8 @@ function criarLabelNivelCurso() {
 
 // <select class="selecao" id="nivelCurso" name="nivelCurso" type="text">
 function criarSelectNivelCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("select");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("select");
     atributo.setAttribute("class", "selecao");
     atributo.setAttribute("id", "nivelCurso" + contCurso);
     atributo.setAttribute("name", "nivelCurso");
@@ -629,7 +629,7 @@ function criarSelectNivelCurso() {
 
 // Recria as opções do select
 function criarOpcoesNivelCurso() {
-    var opcao = document.getElementById("nivelCurso" + contCurso);
+    let opcao = document.getElementById("nivelCurso" + contCurso);
     opcao.appendChild(new Option("Selecione uma graduação"));
     opcao.appendChild(new Option("Ensino Fundamental"));
     opcao.appendChild(new Option("Ensino Médio"));
@@ -642,8 +642,8 @@ function criarOpcoesNivelCurso() {
 
 // <label class="tituloAtributo" id="tituloStatusCurso" for="statusCurso">Status:</label>
 function criarLabelStatusCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloStatusCurso" + contCurso);
     atributo.setAttribute("for", "statusCurso" + contCurso);
@@ -654,8 +654,8 @@ function criarLabelStatusCurso() {
 
 // <select class="selecao " id="statusCurso" name="statusCurso" type="text">
 function criarSelectStatusCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("select");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("select");
     atributo.setAttribute("class", "selecao");
     atributo.setAttribute("id", "statusCurso" + contCurso);
     atributo.setAttribute("name", "statusCurso" + contCurso);
@@ -666,7 +666,7 @@ function criarSelectStatusCurso() {
 
 // Recria as opções do select
 function criarOpcoesStatusCurso() {
-    var opcao = document.getElementById("statusCurso" + contCurso);
+    let opcao = document.getElementById("statusCurso" + contCurso);
     opcao.appendChild(new Option("Selecione o Status"));
     opcao.appendChild(new Option("Cursando"));
     opcao.appendChild(new Option("Incompleto"));
@@ -675,8 +675,8 @@ function criarOpcoesStatusCurso() {
 
 // <label class="tituloAtributo" id="tituloInstituicao" for="instituicao">Instituição:</label>
 function criarLabelInstituicaoCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("id", "tituloInstituicao" + contCurso);
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("for", "instituicao" + contCurso);
@@ -687,8 +687,8 @@ function criarLabelInstituicaoCurso() {
 
 // <input class="campoLinha" id="instituicao" name="instituicao" type="text" size="90" maxlength="200" placeholder="E.E.E.T. Munehisa Honma" autocomplete="off"/>
 function criarInputInstituicaoCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "instituicao" + contCurso);
     atributo.setAttribute("name", "instituicao" + contCurso);
@@ -703,8 +703,8 @@ function criarInputInstituicaoCurso() {
 
 // <h4 class="tituloAtributo" id="tituloDataInicio">Data de Início:</h4>
 function criarTituloDataInicioCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("h4");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("h4");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloDataInicio");
     atributo.textContent = "Data de Início:";
@@ -714,8 +714,8 @@ function criarTituloDataInicioCurso() {
 
 // <label class="tituloAtributo" id="tituloMesInicioCurso" for="mesInicioCurso">Mês: </label>
 function criarLabelMesInicioCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloMesInicioCurso" + contCurso);
     atributo.setAttribute("for", "mesInicioCurso" + contCurso);
@@ -726,8 +726,8 @@ function criarLabelMesInicioCurso() {
 
 // <input class="campoLinha" id="mesInicioCurso" name="mesInicioCurso" type="text" size="2" maxlength="2" placeholder="05" autocomplete="off"/>
 function criarInputMesInicioCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "mesInicioCurso" + contCurso);
     atributo.setAttribute("name", "mesInicioCurso" + contCurso);
@@ -742,8 +742,8 @@ function criarInputMesInicioCurso() {
 
 // <label class="tituloAtributo" id="tituloAnoInicioCurso" for="anoInicioCurso">Ano: </label>
 function criarLabelAnoInicioCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloAnoInicioCurso" + contCurso);
     atributo.setAttribute("for", "anoInicioCurso" + contCurso);
@@ -754,8 +754,8 @@ function criarLabelAnoInicioCurso() {
 
 // <input class="campoLinha" id="mesInicioCurso" name="anoInicioCurso" type="text" size="4" maxlength="4" placeholder="2001" autocomplete="off"/>
 function criarInputAnoInicioCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "anoInicioCurso" + contCurso);
     atributo.setAttribute("name", "anoInicioCurso" + contCurso);
@@ -770,8 +770,8 @@ function criarInputAnoInicioCurso() {
 
 // <h4 class="tituloAtributo" id="tituloDataConclusao">Data de Conclusão:</h4>
 function criarTituloDataGraduacaoCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("h4");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("h4");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloDataConclusao");
     atributo.textContent = "Data de Conclusão";
@@ -781,8 +781,8 @@ function criarTituloDataGraduacaoCurso() {
 
 // <label class="tituloAtributo" id="tituloMesGraduacaoCurso" for="mesGraduacaoCurso">Mês: </label>
 function criarLabelMesGraduacaoCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloMesGraduacaoCurso" + contCurso);
     atributo.setAttribute("for", "mesGraduacaoCurso" + contCurso);
@@ -793,8 +793,8 @@ function criarLabelMesGraduacaoCurso() {
 
 // <input class="campoLinha" id="mesGraduacaoCurso" name="mesGraduacaoCurso" type="text" size="2" maxlength="2" placeholder="08" autocomplete="off"/>
 function criarInputMesGraduacaoCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "mesGraduacaoCurso" + contCurso);
     atributo.setAttribute("name", "mesGraduacaoCurso" + contCurso);
@@ -809,8 +809,8 @@ function criarInputMesGraduacaoCurso() {
 
 // <label class="tituloAtributo" id="tituloAnoGraduacaoCurso" for="anoGraduacaoCurso">Ano: </label>
 function criarLabelAnoGraduacaoCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloAnoGraduacaoCurso" + contCurso);
     atributo.setAttribute("for", "anoGraduacaoCurso" + contCurso);
@@ -821,8 +821,8 @@ function criarLabelAnoGraduacaoCurso() {
 
 // <input class="campoLinha" id="anoGraduacaoCurso" name="anoGraduacaoCurso" type="text" size="4" maxlength="4" placeholder="2001" autocomplete="off"/>
 function criarInputAnoGraduacaoCurso() {
-    var referencia = document.getElementById("curso(" + contCurso + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("curso(" + contCurso + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "anoGraduacaoCurso" + contCurso);
     atributo.setAttribute("name", "anoGraduacaoCurso" + contCurso);
@@ -837,8 +837,8 @@ function criarInputAnoGraduacaoCurso() {
 
 // <label class="tituloAtributo" id="tituloIdioma" for="idioma">Idioma:</label>
 function criarLabelIdioma() {
-    var referencia = document.getElementById("idioma(" + contIdioma + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("idioma(" + contIdioma + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloIdioma" + contIdioma);
     atributo.setAttribute("for", "idioma" + contIdioma);
@@ -849,8 +849,8 @@ function criarLabelIdioma() {
 
 // <select class="selecao" id="idioma" name="idioma" type="text">
 function criarSelectIdioma() {
-    var referencia = document.getElementById("idioma(" + contIdioma + ")");
-    var atributo = document.createElement("select");
+    let referencia = document.getElementById("idioma(" + contIdioma + ")");
+    let atributo = document.createElement("select");
     atributo.setAttribute("class", "selecao");
     atributo.setAttribute("id", "idioma" + contIdioma);
     atributo.setAttribute("type", "text");
@@ -860,7 +860,7 @@ function criarSelectIdioma() {
 
 // Recria as opções do select
 function criarOpcoesIdioma() {
-    var opcao = document.getElementById("idioma" + contIdioma);
+    let opcao = document.getElementById("idioma" + contIdioma);
     opcao.appendChild(new Option("Selecione um idioma"));
     opcao.appendChild(new Option("Alemão"));
     opcao.appendChild(new Option("Árabe"));
@@ -874,8 +874,8 @@ function criarOpcoesIdioma() {
 
 // <label class="tituloAtributo" id="tituloNivelIdioma" for="nivelIdioma">Nível:</label>
 function criarLabelNivelIdioma() {
-    var referencia = document.getElementById("idioma(" + contIdioma + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("idioma(" + contIdioma + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloNivelIdioma" + contIdioma);
     atributo.setAttribute("for", "nivelIdioma" + contIdioma);
@@ -886,8 +886,8 @@ function criarLabelNivelIdioma() {
 
 // <select class="selecao" id="nivelIdioma" name="nivelIdioma" type="text" >
 function criarSelectNivelIdioma() {
-    var referencia = document.getElementById("idioma(" + contIdioma + ")");
-    var atributo = document.createElement("select");
+    let referencia = document.getElementById("idioma(" + contIdioma + ")");
+    let atributo = document.createElement("select");
     atributo.setAttribute("class", "selecao");
     atributo.setAttribute("id", "nivelIdioma" + contIdioma);
     atributo.setAttribute("type", "text");
@@ -897,7 +897,7 @@ function criarSelectNivelIdioma() {
 
 // Recria as opções do select
 function criarOpcoesNivelIdioma() {
-    var opcao = document.getElementById("nivelIdioma" + contIdioma);
+    let opcao = document.getElementById("nivelIdioma" + contIdioma);
     opcao.appendChild(new Option("Selecione um nível"));
     opcao.appendChild(new Option("Básico"));
     opcao.appendChild(new Option("Intermediário"));
@@ -907,8 +907,8 @@ function criarOpcoesNivelIdioma() {
     
 // <label class="tituloAtributo" id="tituloFuncao" for="funcao">Função: </label>
 function criarLabelFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class","tituloAtributo");
     atributo.setAttribute("id", "tituloFuncao" + contFuncao);
     atributo.setAttribute("for", "funcao" + contFuncao)
@@ -919,8 +919,8 @@ function criarLabelFuncao() {
 
 // <input class="campoLinha" id="funcao" name="funcao" type="text" size="100" maxlength="100" placeholder="Desenvolvedor WEB júnior" autocomplete="off"/>
 function criarInputFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "funcao" + contFuncao);
     atributo.setAttribute("name", "funcao" + contFuncao);
@@ -934,8 +934,8 @@ function criarInputFuncao() {
 
 // <label class="tituloAtributo" id="tituloEmpresa" for="empresa">Empresa:</label>
 function criarLabelEmpresa() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloEmpresa" + contFuncao);
     atributo.setAttribute("for", "empresa" + contFuncao);
@@ -946,8 +946,8 @@ function criarLabelEmpresa() {
 
 // <input class="campoLinha" id="empresa" name="empresa" type="text" size="100" maxlength="100" placeholder="Métricas Montreal LTDA." autocomplete="off"/>
 function criarInputEmpresa() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "empresa" + contFuncao);
     atributo.setAttribute("name", "empresa" + contFuncao);
@@ -961,8 +961,8 @@ function criarInputEmpresa() {
 
 // <h4 class="tituloAtributo" id="tituloDataInicioFuncao">Data de Início</h4>
 function CriarTituloDataInicioFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("h4");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("h4");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloDataInicioFuncao" + contFuncao);
     atributo.textContent = "Data de Início";
@@ -972,8 +972,8 @@ function CriarTituloDataInicioFuncao() {
 
 // <label class="tituloAtributo" id="tituloMesInicioFuncao" for="mesInicioFuncao">Mês: </label>
 function criarLabelMesInicioFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloMesInicioFuncao" + contFuncao);
     atributo.setAttribute("for", "mesInicioFuncao" + contFuncao);
@@ -984,8 +984,8 @@ function criarLabelMesInicioFuncao() {
 
 // <input class="campoLinha" id="mesInicioFuncao" name="mesInicioFuncao" type="text" size="2" maxlength="2" placeholder="05" autocomplete="off"/>
 function criarInputMesInicioFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "mesInicioFuncao" + contFuncao);
     atributo.setAttribute("name", "mesInicioFuncao" + contFuncao);
@@ -999,8 +999,8 @@ function criarInputMesInicioFuncao() {
 
 // <label class="tituloAtributo" id="tituloAnoInicioFuncao" for="anoInicioFuncao">Ano: </label>
 function criarLabelAnoInicioFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloAnoInicioFuncao" + contFuncao);
     atributo.setAttribute("for", "anoInicioFuncao" + contFuncao);
@@ -1011,8 +1011,8 @@ function criarLabelAnoInicioFuncao() {
 
 // <input class="campoLinha" id="anoInicioFuncao" name="anoInicioFuncao" type="text" size="4" maxlength="4" placeholder="2001" autocomplete="off"/>
 function criarInputAnoInicioFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "anoInicioFuncao" + contFuncao);
     atributo.setAttribute("name", "anoInicioFuncao" + contFuncao);
@@ -1026,8 +1026,8 @@ function criarInputAnoInicioFuncao() {
 
 // <h4 class="tituloAtributo" id="tituloDataTerminoFuncao">Data de Término</h4>
 function criarTituloDataTerminoFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("h4");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("h4");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloDataTerminoFuncao" + contFuncao);
     atributo.textContent = "Data de Término";
@@ -1037,8 +1037,8 @@ function criarTituloDataTerminoFuncao() {
 
 // <label class="tituloAtributo" id="tituloMesTerminoFuncao" for="mesTerminoFuncao">Mês: </label>
 function criarLabelMesTerminoFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloMesTerminoFuncao" + contFuncao);
     atributo.setAttribute("for", "mesTerminoFuncao" + contFuncao);
@@ -1049,8 +1049,8 @@ function criarLabelMesTerminoFuncao() {
 
 // <input class="campoLinha" id="mesTerminoFuncao" name="mesTerminoFuncao" type="text" size="2" maxlength="2" placeholder="05" autocomplete="off"/>
 function criarInputMesTerminoFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "mesTerminoFuncao" + contFuncao);
     atributo.setAttribute("name", "mesTerminoFuncao" + contFuncao);
@@ -1064,8 +1064,8 @@ function criarInputMesTerminoFuncao() {
 
 // <label class="tituloAtributo" id="tituloAnoTerminoFuncao" for="anoTerminoFuncao">Ano: </label>
 function criarLabelAnoTerminoFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloAnoTerminoFuncao" + contFuncao);
     atributo.setAttribute("for", "anoTerminoFuncao" + contFuncao);
@@ -1076,8 +1076,8 @@ function criarLabelAnoTerminoFuncao() {
 
 // <input class="campoLinha" id="anoTerminoFuncao" name="anoTerminoFuncao" type="text" size="4" maxlength="4" placeholder="2001" autocomplete="off"/>
 function criarInputAnoTerminoFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("input");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("input");
     atributo.setAttribute("class", "campoLinha");
     atributo.setAttribute("id", "anoTerminoFuncao" + contFuncao);
     atributo.setAttribute("name", "anoTerminoFuncao" + contFuncao);
@@ -1091,8 +1091,8 @@ function criarInputAnoTerminoFuncao() {
 
 // <label class="tituloAtributo" id="tituloDescricaoFuncao" for="descricaoFuncao">Descrição da Função:</label>
 function criarLabelDescricaoFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("label");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("label");
     atributo.setAttribute("class", "tituloAtributo");
     atributo.setAttribute("id", "tituloDescricaoFuncao" + contFuncao);
     atributo.setAttribute("for", "descricaoFuncao" + contFuncao);
@@ -1103,8 +1103,8 @@ function criarLabelDescricaoFuncao() {
 
 // <textarea class="campoCaixa" id="descricaoFuncao" name="descricaoFuncao" type="text" size="200" rows="10" cols="60" maxlength="600" placeholder="Digite um breve resumo de suas responsabilidades na função que descrevestes acima." autocomplete="off"></textarea>
 function criarTextareaDescricaoFuncao() {
-    var referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
-    var atributo = document.createElement("textarea");
+    let referencia = document.getElementById("historicoProfissional(" + contFuncao + ")");
+    let atributo = document.createElement("textarea");
     atributo.setAttribute("class", "campoCaixa");
     atributo.setAttribute("name", "descricaoFuncao" + contFuncao);
     atributo.setAttribute("id", "descricaoFuncao" + contFuncao);
