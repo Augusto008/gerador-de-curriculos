@@ -9,10 +9,13 @@
         <!-- Configurações para avisos de cookies AdOpt -->
         <meta name="adopt-website-id" content="176cae3f-ea8d-4c72-b4ea-16e56ad8a75f" />
         <script src="//tag.goadopt.io/injector.js?website_code=176cae3f-ea8d-4c72-b4ea-16e56ad8a75f" class="adopt-injector"></script>
+        <script>window.adoptHideAfterConsent=true;</script>
+        <button onclick="window.sendAdoptCommand('open')">Mostrar Aviso</button>
     </head>
     <body>
         <div class="cabeca" id="cabecalho">
             <h1 style="text-align: full;" class="titulo" id="tituloPrincipal">Currículo Fácil</h1>
+            <a href="javascript:void" onclick="window.sendAdoptCommand('open')">Botão para mostrar o Aviso - (Tag 3)</a>
         </div>
         <div class="intro" id="introducao">
             <h2 class="titulo" id="subTitulo">Simplificando Currículos</h2>
