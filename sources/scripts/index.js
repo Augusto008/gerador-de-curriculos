@@ -230,7 +230,7 @@ function criarBotaoDeleteTelefone() {
     let botao = document.createElement("img");
     botao.setAttribute("class", "deletar");
     botao.setAttribute("id", "deletarTelefone" + contTelefone);
-    botao.setAttribute("src", "../sources/images/botaoLixeira.png");
+    botao.setAttribute("src", "..//sources/images/botaoLixeira.png");
     botao.setAttribute("width", "25px");
     botao.setAttribute("onclick", "deletar('telefone(" + contTelefone + ")', 'telefone', " + contTelefone + ")");
 
@@ -242,7 +242,7 @@ function criarBotaoDeleteRedeSocial() {
     let botao = document.createElement("img");
     botao.setAttribute("id", "deletarRedeSocial" + contRedeSocial);
     botao.setAttribute("class", "deletar");
-    botao.setAttribute("src", "sources/images/botaoLixeira.png");
+    botao.setAttribute("src", "..//curriculoFacil/sources/images/botaoLixeira.png");
     botao.setAttribute("width", "25px");
     botao.setAttribute("onclick", "deletar('redeSocial(" + contRedeSocial + ")', 'redeSocial', " + contRedeSocial + ")");
 
@@ -254,7 +254,7 @@ function criarBotaoDeleteCurso() {
     let botao = document.createElement("img");
     botao.setAttribute("id", "deletarCurso" + contCurso);
     botao.setAttribute("class", "deletar");
-    botao.setAttribute("src", "sources/images/botaoLixeira.png");
+    botao.setAttribute("src", "..//curriculoFacil/sources/images/botaoLixeira.png");
     botao.setAttribute("width", "25px");
     botao.setAttribute("onclick", "deletar('curso(" + contCurso + ")', 'curso', " + contCurso + ")");
 
@@ -266,7 +266,7 @@ function criarBotaoDeleteIdioma() {
     let botao = document.createElement("img");
     botao.setAttribute("id", "deletarIdioma" + contIdioma);
     botao.setAttribute("class", "deletar");
-    botao.setAttribute("src", "sources/images/botaoLixeira.png");
+    botao.setAttribute("src", "..//curriculoFacil/sources/images/botaoLixeira.png");
     botao.setAttribute("width", "25px");
     botao.setAttribute("onclick", "deletar('idioma(" + contIdioma + ")', 'idioma', " + contIdioma + ")");
 
@@ -278,7 +278,7 @@ function criarBotaoDeleteFuncao() {
     let botao = document.createElement("img");
     botao.setAttribute("id", "deletarFuncao" + contFuncao);
     botao.setAttribute("class", "deletar");
-    botao.setAttribute("src", "sources/images/botaoLixeira.png");
+    botao.setAttribute("src", "..//curriculoFacil/sources/images/botaoLixeira.png");
     botao.setAttribute("width", "25px");
     botao.setAttribute("onclick", "deletar('historicoProfissional(" + contFuncao + ")', 'funcao', " + contFuncao + ")");
 
