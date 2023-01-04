@@ -230,7 +230,7 @@ function criarBotaoDeleteTelefone() {
     let botao = document.createElement("img");
     botao.setAttribute("class", "deletar");
     botao.setAttribute("id", "deletarTelefone" + contTelefone);
-    botao.setAttribute("src", "sources/images/botaoLixeira.png");
+    botao.setAttribute("src", "../sources/images/botaoLixeira.png");
     botao.setAttribute("width", "25px");
     botao.setAttribute("onclick", "deletar('telefone(" + contTelefone + ")', 'telefone', " + contTelefone + ")");
 
